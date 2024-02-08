@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas1{
+    position: fixed;
+    top: 0; left:0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#353535, #000000);
+}
+@keyframes animText{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 100;}
+}
+h1,h2,h3{
+    margin: 20px;
+    text-shadow: crimson;
+    font-size: 45px;
+}
+h1{
+    animation: animText 20s;
+    color: pink;
+}
+h2{
+    animation: animText 15s;
+    color: pink;
+}
+h3{
+    animation: animText 10s;
+    color: pink;
+}
+@keyframes animBtn {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+.button{
+    margin: 20px;
+    animation: animBtn 20s;
+}
+.buttonYes{
+
+    transition-duration: 0.4s;
+    background-color: black;
+    color: #ffb7c5;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 12px 28px;
+    font-size: 18px;
+
+}
+.buttonYes:hover{
+    background-color: #ffb7c5;
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.buttonNo{
+    background-color: black;
+    color: crimson;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 18px;
+}
+.buttonNo:hover{
+    background-color: crimson;
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: not-allowed;
+}
+.gifDiv{
+    position: absolute;
+    translate: 100% -20%;
+}
+.gifClassView{
+    opacity: 100;
+}
+.gifClassHide{
+    opacity: 0;
+}
