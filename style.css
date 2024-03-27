@@ -1,0 +1,41 @@
+#field {
+    position: relative;
+    z-index: 0;
+    aspect-ratio: 1;
+    margin: 10px;
+    margin-right: 20px;
+}
+#robot {
+    position: absolute;
+    z-index: 1;
+}
+
+
+body {
+    background-color: #1f1f1f;
+    color: #9ccdc4;
+    
+}
+
+input {
+    color: #d7ab4c;
+    background-color: #181818;
+    width: 75px;
+}
+input[type=file] {
+    width: 200px;
+}
+input::file-selector-button {
+    color: #4ec9a2;
+    background-color: #181818;
+}
+button{
+    color: #d7ab4c;
+    background-color: #181818;
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
