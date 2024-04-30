@@ -195,13 +195,13 @@ function addPoint(){
     }
 
     if(rotRobot != 0){
-        num = (rad/Math.PI);
+        num = (180 * rad/Math.PI);
         if(String(num).includes('.')){
             num = ' ' + String(num).slice(0, String(num).indexOf('.') + 3);
         }else{
             num = ' ' + String(num);
         }
-        var output = "Added: " + String(num) + " π radians";
+        var output = "Added: " + String(num) + " degrees";
         document.getElementById("points").innerHTML += "<p>" + output + "</p>";
     }
     var output = "Added: " + String(point);
