@@ -195,7 +195,7 @@ function addPoint(){
     }
 
     if(rotRobot != 0){
-        num = (180 * rad/Math.PI);
+        num = -(180 * rad/Math.PI);
         if(String(num).includes('.')){
             num = ' ' + String(num).slice(0, String(num).indexOf('.') + 3);
         }else{
